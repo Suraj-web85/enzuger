@@ -1,0 +1,62 @@
+
+.brd-rd {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.sm-bg-tp {
+  width: 445px;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+  height: 520px;
+  cursor: pointer;
+  transition: flex 0.5s ease-in-out;
+}
+.ltr-gps {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hd-wr {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ltr-gps {
+  letter-spacing: 0.5px;
+}
+.rd-mre-bn-blow {
+  margin-top: 1rem;
+  text-align: center;
+  background-color: hsla(0, 5%, 74%, 0.199);
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+  border-style: solid;
+  padding: 0.5rem 1.2rem;
+}
+.rnd-dk-rha-hu > h3,
+.sht {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.pg-sm-cnt {
+  font-size: 1.1rem;
+  width: 412px;
+}
+.sb-fs-conte-pr {
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
