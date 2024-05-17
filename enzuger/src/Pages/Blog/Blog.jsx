@@ -4,6 +4,7 @@ import BlogFrst from "../../Component/BlogCom/BlogFrst";
 import BlogScnd from "../../Component/BlogCom/BlogScnd";
 import BlogThrd from "../../Component/BlogCom/BlogThrd";
 import BlogFrth from "../../Component/BlogCom/BlogFrth";
+import BlogOwl from "../../Component/BlogCom/BlogOwl";
 
 
 function Blog() {
@@ -14,6 +15,7 @@ function Blog() {
         <BlogScnd />  
         <BlogThrd />
         <BlogFrth />
+        <BlogOwl />
       </div>
     </>
   );

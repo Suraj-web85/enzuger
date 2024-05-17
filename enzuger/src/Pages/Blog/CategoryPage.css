@@ -1,0 +1,94 @@
+.category-page{
+  padding-left:100px ;
+  padding-right: 100px;
+}
+.category-page > h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.ctry-ig-wth-cnt{
+  cursor: pointer;
+}
+.ct-wse-sc-mn-dv{
+  padding: 1.5rem 100px;
+}
+.hd-tit {
+  text-align: center;
+}
+.df-btn-cntr-kro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+
+.ct-wse-sub-cntr{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.ctry-ig-wth-cnt{
+  overflow: hidden;
+  
+  border-radius: 10px;
+ border: 2px solid #f4f4f4;
+
+} 
+
+.ig-cntr-frst-ctr> img{
+  height: 243px;
+  width: 100%;
+  object-fit: cover;
+}
+.cnt-cntr-scnd-ctr{
+  padding: 10px 20px 25px ;
+}
+.cnt-cntr-scnd-ctr > h3{
+  font-size: 1.2rem;
+  line-height: 25px;
+  font-weight: 600;
+}
+.article-single-content-description{
+  
+  font-size: 18px;
+  line-height: 25px;
+  margin: 10px 0 0;
+  color: #393939;
+  min-height: 50px; 
+}
+
+.ig-cntr-frst-ctr{
+  position: relative;
+
+}
+.ig-cntr-frst-ctr p{
+  position: absolute;
+  color: white;
+  bottom: 0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #333;
+  color: #fff;
+}
+
+.pagination button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+

@@ -1,5 +1,8 @@
+// src/Component/BlogCom/BlogFrth.jsx
+
 import React, { useState } from "react";
-import "./BlogFrth.css"; // Import the CSS file for the parent component
+import { Link } from 'react-router-dom'; // Import Link
+import "./BlogFrth.css"; 
 import BlogTitle from "../BlogTItle/BlogTitle";
 import BlogCate from "../../assets/data/BlogCate.json";
 
@@ -9,6 +12,17 @@ function BlogFrth() {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
+
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    }
+    return text;
+  };
+  const filteredArticles = selectedCategory
+    ? BlogCate.filter(item => item.category === selectedCategory).slice(0, 6)
+    : BlogCate.slice(0, 6);
+
 
   return (
     <div className="mn-dv-of-blg-frth">
@@ -52,15 +66,15 @@ function BlogFrth() {
 
         <div className="ct-wse-sc-mn-dv">
           <div className="ct-wse-sub-cntr">
-            {BlogCate.filter(item => !selectedCategory || item.category === selectedCategory).map((item) => (
+            {filteredArticles.filter(item => !selectedCategory || item.category === selectedCategory).map((item) => (
               <div className="ctry-ig-wth-cnt" key={item.id}>
                 <div className="ig-cntr-frst-ctr">
-                  <img src={`/images/${item.img}`} alt="" />
+                  <img src={`/images/${item.img}`} alt="Article" />
                   <p>{item.lastTime} Min read {item.Date}</p>
                 </div>
                 <div className="cnt-cntr-scnd-ctr">
-                  <h3>{item.title}</h3>
-                  <p className="article-single-content-description">{item.content}</p>
+                  <h3>{truncateText(item.title, 50)}</h3>
+                  <p className="article-single-content-description">{truncateText(item.content, 50)}</p>
                 </div>
               </div>
             ))}
@@ -68,9 +82,11 @@ function BlogFrth() {
               <p className="no-articles-message">Sorry, there are currently no articles available for this category.</p>
             )}
           </div>
-          <div className="center-content">
-            <button type="button">View more</button>
-          </div>
+        </div>
+        <div className="center-con">
+          <Link to={`/blog/category/${selectedCategory}`} className="viwemore-link">
+            <button type="button" className="viwemore">View More</button>
+          </Link>
         </div>
       </div>
     </div>
