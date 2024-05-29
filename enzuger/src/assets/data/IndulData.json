@@ -1,39 +1,32 @@
-
-
 [
   {
     "id": 2,
-    "img": "/images/beverages.webp",
+    "img": "beverages.webp",
     "title": "Beverages"
   },
   {
     "id": 4,
-    "img": "/images/rescale.webp",
+    "img": "rescale.webp",
     "title": "Juices"
   },
   {
     "id": 3,
-    "img": "/images/milk.webp",
+    "img": "milk.webp",
     "title": "Milk preparation"
   },
   {
     "id": 6,
-    "img": "/images/treat.webp",
+    "img": "treat.webp",
     "title": "Treats"
   },
   {
     "id": 5,
-    "img": "/images/sweet.webp",
+    "img": "sweet.webp",
     "title": "Indian Sweets"
   },
   {
     "id": 1,
-    "img": "/images/baking.webp",
+    "img": "baking.webp",
     "title": "Baking"
   }
- 
-  
-  
-  
-  
 ]

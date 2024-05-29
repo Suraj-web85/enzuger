@@ -1,0 +1,156 @@
+/* Admin Page */
+.en-adpg {
+  justify-content: space-between;
+  height: 100vh;
+}
+.e-snav {
+  width: 240px;
+  height: 100%;
+  overflow: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  overflow-y: scroll;
+  /* border-right: 2px solid #ddd; */
+  /* background-color: black; */
+}
+.en-ad-logo {
+  width: 180px;
+  margin: 20px 0;
+}
+.e-snav {
+  --sb-track-color: #d9d9d9;
+  --sb-thumb-color: #003690;
+  --sb-size: 4px;
+}
+.e-snav::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+.e-snav::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 9px;
+}
+.e-snav::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 9px;
+}
+
+.esnav-active{
+  color: var(--p-color) !important;
+  font-weight: bold;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .e-snav {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+/* Side Navigation Of Admin Panel */
+
+.en-sib-item {
+  padding: 6px 10px 6px 30px;
+  transition: background-color 0.15s;
+  border-radius: 5px;
+  width: 100%;
+}
+.en-sib-item:hover {
+  background-color: var(--bg-color);
+}
+.en-sib-title > span {
+  gap: 20px;
+}
+.en-sib-title {
+  justify-content: space-between;
+  cursor: pointer;
+}
+.en-sib-item img {
+  display: inline-block;
+  width: 30px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.en-sib-title .en-sib-toggle-btn {
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: var(--p-color);
+  margin-right: 10px;
+}
+.en-sib-item.open > .en-sib-title .en-sib-toggle-btn {
+  transform: rotate(-90deg);
+}
+.sidebar-content {
+  padding-top: 0.25em;
+  height: 0;
+  overflow: hidden;
+}
+.sidebar-content .en-sib-item {
+  background-color: beige;
+  padding: 10px 0px 10px 30px;
+}
+.en-sib-item.open > .sidebar-content {
+  height: auto;
+}
+
+.en-sib-item.plain {
+  color: black;
+  justify-content: flex-start;
+  text-decoration: none;
+  gap: 20px;
+}
+.en-sib-item.plain:hover {
+  color: var(--p-color);
+}
+/*  */
+
+.ead-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Top Nav of Admin Panel */
+
+.e-tnav {
+  justify-content: space-between;
+  inset: 0 0 auto 0;
+  height: 70px;
+  padding: 0 20px;
+  border-bottom: 4px solid #d9d9d9;
+}
+.e-tnav h5 span {
+  color: #f58020;
+}
+.etn-ibx {
+  font-size: 1.5rem;
+  gap: 20px;
+}
+.etnbell-bx {
+  position: relative;
+}
+.etn-bell {
+  color: #003690;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  padding: 6px;
+}
+.etnbell-bx span {
+  position: absolute;
+  font-weight: bold;
+  background-color: #f58020;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  inset: 0 0 auto auto;
+  font-size: 0.8rem;
+  color: white;
+}
+.etn-pfp {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  padding: 6px 2px 0px 2px;
+  background: #003690;
+  color: white;
+  border: 2px solid #d9d9d9;
+}
